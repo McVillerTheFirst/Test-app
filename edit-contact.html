@@ -42,7 +42,7 @@
             }
 
             function getContact(){
-                fetch(roothPath + 'controller//get-contacts/?id=' + id)
+                fetch(roothPath + 'controller/get-contacts/?id=' + id)
                 .then(function(response){
                     return response.json();
                 })
