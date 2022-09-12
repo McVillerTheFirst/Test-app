@@ -4,7 +4,7 @@
         <title></title>
     </head>
     <body onload="getContact()">
-        <div id="avatar-image"></div>
+        <div id="avatarImage"></div>
         <form id="editForm">
             <label for="firstname">First name</label>
             <input type="text" name="firstname" id="firstname" readonly><br/>
@@ -47,7 +47,7 @@
                     return response.json();
                 })
                 .then(function(data){
-
+                    displayOutput(data);
                 })
             }
             function homeLink(){
